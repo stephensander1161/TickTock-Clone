@@ -1,9 +1,7 @@
-const express = require('express');
-const mongoose = require('mongoose');
-
-const Data = require('./data.js');
-const Videos = require('./dbModel.js');
-
+import express from 'express';
+import mongoose from 'mongoose';
+import Data from './data.js';
+import Videos from './dbModel.js';
 import dotenv from 'dotenv';
 
 //App config
@@ -14,7 +12,7 @@ dotenv.config();
 //Middlewares
 app.use(express.json());
 app.use((req, res, next) => {
-	res.setHeaders('Access-Control-Allow-Origin', '*'), res.setHeaders('Access-Control-Allow-Headers', '*'), next();
+	res.setHeader('Access-Control-Allow-Origin', '*'), res.setHeader('Access-Control-Allow-Headers', '*'), next();
 });
 
 //DB Config
