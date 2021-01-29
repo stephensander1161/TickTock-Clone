@@ -1,7 +1,9 @@
-import express from 'express';
-import mongoose from 'mongoose';
-import Data from './data.js';
-import Videos from './dbModel.js';
+const express = require('express');
+const mongoose = require('mongoose');
+
+const Data = require('./data.js');
+const Videos = require('./dbModel.js');
+
 import dotenv from 'dotenv';
 
 //App config
