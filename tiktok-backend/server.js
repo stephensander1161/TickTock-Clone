@@ -18,7 +18,7 @@ app.use((req, res, next) => {
 //DB Config
 const CONNECTION_URL = process.env.REACT_APP_DBCONSTRING;
 mongoose.connect(CONNECTION_URL, {
-	useUrlParser: true,
+	useNewUrlParser: true,
 	useCreateIndex: true,
 	useUnifiedTopology: true
 });
