@@ -11,10 +11,10 @@ html {
 
 .app__videos {
 	position: relative;
-	height: 800px;
+	height: 400px;
 	border-radius: 20px;
 	width: 80%;
-	max-width: 500px;
+	max-width: 590px;
 	overflow: scroll;
 	scroll-snap-type: y mandatory;
 }
