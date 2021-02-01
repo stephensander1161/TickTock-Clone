@@ -18,6 +18,8 @@ function App() {
 	}, []);
 	return (
 		<div className="app">
+			<h1 className="title"> What is Stephen Watching?</h1>
+
 			<div className="app__videos">
 				{videos.map(({ url, channel, description, song, likes, messages, shares }) => (
 					<Video

@@ -23,6 +23,10 @@ html {
 	display: none;
 }
 
+.title {
+	color: white;
+}
+
 .app__videos {
 	-ms-overflow-style: none;
 	scrollbar-width: none;
